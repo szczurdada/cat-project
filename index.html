@@ -8,7 +8,17 @@
 <body>
 <header>
   <div class="header__container">
+    <div class="menu-burger-mmmm">
+      <ul class="menu-burger__menu">
+        <li><a href="#">Main</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Profile</a></li>
+      </ul>
+    </div>
+
     <div class="header__top">
+      <div class="header__navpriv">
       <div class="header__logo">
         <img src="src/logo.png" alt="logo"/>
         <img class="header__logo-reverse" src="src/logo.png" alt="logo"/>
@@ -21,14 +31,20 @@
           <li><a href="#">News</a></li>
           <li><a href="#">Profile</a></li>
         </ul>
+        <div class="menu-burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </nav>
+    </div>
 
       <div class="header__contact">
         <span class="header__phone">+544 3490 00000</span>
         <span class="header__note">Звони скорее!</span>
       </div>
     </div>
-    <div class="header__title" id="mainTitle">
+    <div class="header__title">
       <h1>Найдено 48 котов</h1>
     </div>
   </div>
@@ -47,260 +63,259 @@
     </section>
 
     <section class="catalog-panel">
-      <div class="catalog__item" data-price="30000" data-age="3">
-        <div class="item__photo">
+      <div class="product-card" data-price="30000" data-age="3">
+        <div class="product-card__photo">
           <img src="src/cat1.png"/>
-          <div class="item__photo-sale">
+          <div class="product-card__sale">
             <span>-40%</span>
           </div>
-          <div class="item__photo-like"><img src="src/like.png"/></div>
+          <div class="product-card__like"><img src="src/like.png"/></div>
         </div>
-        <div class="item__info">
-        <span class="item__title">Кот полосатый</span>
+        <div class="product-card__info">
+        <span class="product-card__title">Кот полосатый</span>
 
-          <div class="item__traits">
-          <span class="item__trait item__trait--color">
+          <div class="product-card__traits">
+          <span class="product-card__trait product-card__trait--color">
             Коричневый
             <br>
             oкрас
           </span>
 
-            <span class="item__trait item__trait--age">
+            <span class="product-card__trait product-card__trait--age">
             <b>3 мес.</b>
             <br>
             Возраст
           </span>
 
-            <span class="item__trait item__trait--paw">
+            <span class="product-card__trait product-card__trait--paw">
             <b>4</b>
             <br>Кол-во лап
           </span>
           </div>
-          <span class="item__trait item__trait--price">
+          <span class="product-card__trait product-card__trait--price">
           30000 руб.
           </span>
         </div>
         <div class=""></div>
-        <div class="item__button">
+        <div class="product-card__button">
           <span>Купить</span>
         </div>
       </div>
 
-      <div class="catalog__item" data-price="40000" data-age="4">
-        <div class="item__photo">
+      <div class="product-card" data-price="40000" data-age="4">
+        <div class="product-card__photo">
           <img src="src/cat2.png"/>
-          <div class="item__photo-sale">
+          <div class="product-card__sale">
             <span></span>
           </div>
-          <div class="item__photo-like"><img src="src/like.png"/></div>
+          <div class="product-card__like"><img src="src/like.png"/></div>
         </div>
-        <div class="item__info">
-          <span class="item__title">Кот полосатый</span>
+        <div class="product-card__info">
+          <span class="product-card__title">Кот полосатый</span>
 
-          <div class="item__traits">
-          <span class="item__trait item__trait--color">
+          <div class="product-card__traits">
+          <span class="product-card__trait product-card__trait--color">
             Коричневый
             <br>
             oкрас
           </span>
 
-            <span class="item__trait item__trait--age">
+            <span class="product-card__trait product-card__trait--age">
             <b>4 мес.</b>
             <br>
             Возраст
           </span>
 
-            <span class="item__trait item__trait--paw">
+            <span class="product-card__trait product-card__trait--paw">
             <b>4</b>
             <br>Кол-во лап
           </span>
           </div>
-          <span class="item__trait item__trait--price">
+          <span class="product-card__trait product-card__trait--price">
           40000 руб.
           </span>
         </div>
         <div class=""></div>
-        <div class="item__button">
+        <div class="product-card__button">
           <span>Купить</span>
         </div>
       </div>
 
-      <div class="catalog__item" data-price="20000" data-age="1">
-        <div class="item__photo">
+      <div class="product-card" data-price="20000" data-age="1">
+        <div class="product-card__photo">
           <img src="src/cat3.png"/>
-          <div class="item__photo-sale">
+          <div class="product-card__sale">
             <span></span>
           </div>
-          <div class="item__photo-like"><img src="src/like.png"/></div>
+          <div class="product-card__like"><img src="src/like.png"/></div>
         </div>
-        <div class="item__info">
-          <span class="item__title">Кот полосатый</span>
+        <div class="product-card__info">
+          <span class="product-card__title">Кот полосатый</span>
 
-          <div class="item__traits">
-          <span class="item__trait item__trait--color">
+          <div class="product-card__traits">
+          <span class="product-card__trait product-card__trait--color">
             Коричневый
             <br>
             oкрас
           </span>
 
-            <span class="item__trait item__trait--age">
+            <span class="product-card__trait product-card__trait--age">
             <b>1 мес.</b>
             <br>
             Возраст
           </span>
 
-            <span class="item__trait item__trait--paw">
+            <span class="product-card__trait product-card__trait--paw">
             <b>4</b>
             <br>Кол-во лап
           </span>
           </div>
-          <span class="item__trait item__trait--price">
+          <span class="product-card__trait product-card__trait--price">
           20000 руб.
           </span>
         </div>
         <div class=""></div>
-        <div class="item__button">
+        <div class="product-card__button">
           <span>Купить</span>
         </div>
       </div>
 
-      <div class="catalog__item" data-price="25000" data-age="2">
-        <div class="item__photo">
+      <div class="product-card" data-price="25000" data-age="2">
+        <div class="product-card__photo">
           <img src="src/cat1.png"/>
-          <div class="item__photo-sale">
+          <div class="product-card__sale">
             <span></span>
           </div>
-          <div class="item__photo-like"><img src="src/like.png"/></div>
+          <div class="product-card__like"><img src="src/like.png"/></div>
         </div>
-        <div class="item__info">
-          <span class="item__title">Кот полосатый</span>
+        <div class="product-card__info">
+          <span class="product-card__title">Кот полосатый</span>
 
-          <div class="item__traits">
-          <span class="item__trait item__trait--color">
+          <div class="product-card__traits">
+          <span class="product-card__trait product-card__trait--color">
             Коричневый
             <br>
             oкрас
           </span>
 
-            <span class="item__trait item__trait--age">
+            <span class="product-card__trait product-card__trait--age">
             <b>2 мес.</b>
             <br>
             Возраст
           </span>
 
-            <span class="item__trait item__trait--paw">
+            <span class="product-card__trait product-card__trait--paw">
             <b>4</b>
             <br>Кол-во лап
           </span>
           </div>
-          <span class="item__trait item__trait--price">
+          <span class="product-card__trait product-card__trait--price">
           25000 руб.
           </span>
         </div>
         <div class=""></div>
-        <div class="item__button">
+        <div class="product-card__button">
           <span>Купить</span>
         </div>
 
 
       </div>
 
-      <div class="catalog__item" data-price="30000" data-age="5">
-        <div class="item__photo">
+      <div class="product-card" data-price="30000" data-age="5">
+        <div class="product-card__photo">
           <img src="src/cat3.png"/>
-          <div class="item__photo-sale">
+          <div class="product-card__sale">
             <span></span>
           </div>
-          <div class="item__photo-like"><img src="src/like.png"/></div>
+          <div class="product-card__like"><img src="src/like.png"/></div>
         </div>
-        <div class="item__info">
-          <span class="item__title">Кот полосатый</span>
+        <div class="product-card__info">
+          <span class="product-card__title">Кот полосатый</span>
 
-          <div class="item__traits">
-          <span class="item__trait item__trait--color">
+          <div class="product-card__traits">
+          <span class="product-card__trait product-card__trait--color">
             Коричневый
             <br>
             oкрас
           </span>
 
-            <span class="item__trait item__trait--age">
+            <span class="product-card__trait product-card__trait--age">
             <b>5 мес.</b>
             <br>
             Возраст
           </span>
 
-            <span class="item__trait item__trait--paw">
+            <span class="product-card__trait product-card__trait--paw">
             <b>4</b>
             <br>Кол-во лап
           </span>
           </div>
-          <span class="item__trait item__trait--price">
+          <span class="product-card__trait product-card__trait--price">
           30000 руб.
           </span>
         </div>
         <div class=""></div>
-        <div class="item__button">
+        <div class="product-card__button">
           <span>Купить</span>
         </div>
       </div>
 
-      <div class="catalog__item" data-price="10000" data-age="1">
-        <div class="item__photo">
+      <div class="product-card" data-price="10000" data-age="1">
+        <div class="product-card__photo">
           <img src="src/cat2.png"/>
-          <div class="item__photo-sale">
+          <div class="product-card__sale">
             <span></span>
           </div>
-          <div class="item-photo-like"><img src="src/like.png"/></div>
+          <div class="product-card__like"><img src="src/like.png"/></div>
         </div>
-        <div class="item__info">
-          <span class="item__title">Кот полосатый</span>
+        <div class="product-card__info">
+          <span class="product-card__title">Кот полосатый</span>
 
-          <div class="item__traits">
-          <span class="item__trait item__trait--color">
+          <div class="product-card__traits">
+          <span class="product-card__trait product-card__trait--color">
             Коричневый
             <br>
             oкрас
           </span>
 
-            <span class="item__trait item__trait--age">
+            <span class="product-card__trait product-card__trait--age">
             <b>1 мес.</b>
             <br>
             Возраст
           </span>
 
-            <span class="item__trait item__trait--paw">
+            <span class="iproduct-card__trait product-card__trait--paw">
             <b>4</b>
             <br>Кол-во лап
           </span>
           </div>
-          <span class="item__trait item__trait--price">
+          <span class="product-card__trait product-card__trait--price">
           10000 руб.
           </span>
         </div>
         <div class=""></div>
-        <div class="item__button">
+        <div class="product-card__button">
           <span>Купить</span>
         </div>
       </div>
     </section>
 
-      <div class="more__items">Показать еще 20 товаров</div>
+      <div class="more-product-cards">Показать еще 20 товаров</div>
 
-    <section class="promo-panel">
-      <div class="promo__title">
+    <section class="subscription-form">
+      <div class="subscription-form__title">
         <h1>Успей купить!</h1>
         <p>Подпишись и успей
           <br>
           словить все акции</p>
       </div>
-      <div class="promo__form">
+      <div class="subscription-form__form">
         <form id="form">
-          <input class="promo__form__email" type="email" placeholder="Email" id="email">
-          <input class="promo__form__button" type="submit" value="Подписаться" id="submit">
-          <div class="promo__form__subscribe">
+          <input class="subscription-form__email" type="email" placeholder="Email" id="email">
+          <input class="subscription-form__button" type="submit" value="Подписаться" id="submit">
+          <div class="subscription-form__subscribe">
             <input type="checkbox" id="news">
-            <label for="news">
-            </label>
+            <label for="news">Подписаться на новости</label>
           </div>
         </form>
       </div>
