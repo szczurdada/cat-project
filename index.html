@@ -1,327 +1,117 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Cats</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Cats</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
   <div class="header__container">
-    <div class="menu-burger-mmmm">
-      <ul class="menu-burger__menu">
-        <li><a href="#">Main</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">News</a></li>
-        <li><a href="#">Profile</a></li>
-      </ul>
-    </div>
-
     <div class="header__top">
-      <div class="header__navpriv">
-      <div class="header__logo">
-        <img src="src/logo.png" alt="logo"/>
-        <img class="header__logo-reverse" src="src/logo.png" alt="logo"/>
-      </div>
-
-      <nav>
-        <ul class="header__menu">
-          <li><a href="#">Main</a></li>
-          <li><a href="#">Gallery</a></li>
-          <li><a href="#">News</a></li>
-          <li><a href="#">Profile</a></li>
-        </ul>
-        <div class="menu-burger">
-          <span></span>
-          <span></span>
-          <span></span>
+      <div class="header__nav">
+        <div class="header__logo">
+          <img src="src/logo.png" alt="logo" />
+          <img class="header__logo-reverse" src="src/logo.png" alt="logo" />
         </div>
-      </nav>
-    </div>
+
+        <nav>
+          <ul class="header__menu">
+            <li><a href="#">Main</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Profile</a></li>
+          </ul>
+          <div class="mobile-menu__open" id="mobileMenuOpen">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </div>
 
       <div class="header__contact">
         <span class="header__phone">+544 3490 00000</span>
-        <span class="header__note">Звони скорее!</span>
+        <span class="header__note">Call us now!</span>
       </div>
     </div>
+
     <div class="header__title">
-      <h1>Найдено 48 котов</h1>
+      <h1>Discover 30 Cats</h1>
     </div>
   </div>
 </header>
 
 <main>
-    <div class="container">
-    <section class="sort-panel"> <b>Сортировать по:</b>
-      <div class="sort-panel__price">
-        Цене <span class="arrow">▼</span>
+  <div class="container">
+    <section class="sort-panel">
+      <b>Sort by:</b>
+
+      <div class="sort-panel__price" id="sortPrice">
+        Price
+        <svg class="arrow-icon" viewBox="0 0 490 490" height="16px" width="16px" fill="currentColor" xmlns="http://www.w3.org/2000/svg" id="svgSortPrice">
+          <polygon points="490,157.332 244.996,407.369 0,157.332 76.493,82.631 244.996,254.598 413.507,82.631"></polygon>
+        </svg>
       </div>
 
-      <div class="sort-panel__age">
-        Возрасту <span class="arrow">▼</span>
-      </div>
-    </section>
-
-    <section class="catalog-panel">
-      <div class="product-card" data-price="30000" data-age="3">
-        <div class="product-card__photo">
-          <img src="src/cat1.png"/>
-          <div class="product-card__sale">
-            <span>-40%</span>
-          </div>
-          <div class="product-card__like"><img src="src/like.png"/></div>
-        </div>
-        <div class="product-card__info">
-        <span class="product-card__title">Кот полосатый</span>
-
-          <div class="product-card__traits">
-          <span class="product-card__trait product-card__trait--color">
-            Коричневый
-            <br>
-            oкрас
-          </span>
-
-            <span class="product-card__trait product-card__trait--age">
-            <b>3 мес.</b>
-            <br>
-            Возраст
-          </span>
-
-            <span class="product-card__trait product-card__trait--paw">
-            <b>4</b>
-            <br>Кол-во лап
-          </span>
-          </div>
-          <span class="product-card__trait product-card__trait--price">
-          30000 руб.
-          </span>
-        </div>
-        <div class=""></div>
-        <div class="product-card__button">
-          <span>Купить</span>
-        </div>
+      <div class="sort-panel__age" id="sortAge">
+        Age
+        <svg class="arrow-icon" viewBox="0 0 490 490" height="16px" width="16px" fill="currentColor" xmlns="http://www.w3.org/2000/svg" id="svgSortAge">
+          <polygon points="490,157.332 244.996,407.369 0,157.332 76.493,82.631 244.996,254.598 413.507,82.631"></polygon>
+        </svg>
       </div>
 
-      <div class="product-card" data-price="40000" data-age="4">
-        <div class="product-card__photo">
-          <img src="src/cat2.png"/>
-          <div class="product-card__sale">
-            <span></span>
-          </div>
-          <div class="product-card__like"><img src="src/like.png"/></div>
-        </div>
-        <div class="product-card__info">
-          <span class="product-card__title">Кот полосатый</span>
-
-          <div class="product-card__traits">
-          <span class="product-card__trait product-card__trait--color">
-            Коричневый
-            <br>
-            oкрас
-          </span>
-
-            <span class="product-card__trait product-card__trait--age">
-            <b>4 мес.</b>
-            <br>
-            Возраст
-          </span>
-
-            <span class="product-card__trait product-card__trait--paw">
-            <b>4</b>
-            <br>Кол-во лап
-          </span>
-          </div>
-          <span class="product-card__trait product-card__trait--price">
-          40000 руб.
-          </span>
-        </div>
-        <div class=""></div>
-        <div class="product-card__button">
-          <span>Купить</span>
-        </div>
-      </div>
-
-      <div class="product-card" data-price="20000" data-age="1">
-        <div class="product-card__photo">
-          <img src="src/cat3.png"/>
-          <div class="product-card__sale">
-            <span></span>
-          </div>
-          <div class="product-card__like"><img src="src/like.png"/></div>
-        </div>
-        <div class="product-card__info">
-          <span class="product-card__title">Кот полосатый</span>
-
-          <div class="product-card__traits">
-          <span class="product-card__trait product-card__trait--color">
-            Коричневый
-            <br>
-            oкрас
-          </span>
-
-            <span class="product-card__trait product-card__trait--age">
-            <b>1 мес.</b>
-            <br>
-            Возраст
-          </span>
-
-            <span class="product-card__trait product-card__trait--paw">
-            <b>4</b>
-            <br>Кол-во лап
-          </span>
-          </div>
-          <span class="product-card__trait product-card__trait--price">
-          20000 руб.
-          </span>
-        </div>
-        <div class=""></div>
-        <div class="product-card__button">
-          <span>Купить</span>
-        </div>
-      </div>
-
-      <div class="product-card" data-price="25000" data-age="2">
-        <div class="product-card__photo">
-          <img src="src/cat1.png"/>
-          <div class="product-card__sale">
-            <span></span>
-          </div>
-          <div class="product-card__like"><img src="src/like.png"/></div>
-        </div>
-        <div class="product-card__info">
-          <span class="product-card__title">Кот полосатый</span>
-
-          <div class="product-card__traits">
-          <span class="product-card__trait product-card__trait--color">
-            Коричневый
-            <br>
-            oкрас
-          </span>
-
-            <span class="product-card__trait product-card__trait--age">
-            <b>2 мес.</b>
-            <br>
-            Возраст
-          </span>
-
-            <span class="product-card__trait product-card__trait--paw">
-            <b>4</b>
-            <br>Кол-во лап
-          </span>
-          </div>
-          <span class="product-card__trait product-card__trait--price">
-          25000 руб.
-          </span>
-        </div>
-        <div class=""></div>
-        <div class="product-card__button">
-          <span>Купить</span>
-        </div>
-
-
-      </div>
-
-      <div class="product-card" data-price="30000" data-age="5">
-        <div class="product-card__photo">
-          <img src="src/cat3.png"/>
-          <div class="product-card__sale">
-            <span></span>
-          </div>
-          <div class="product-card__like"><img src="src/like.png"/></div>
-        </div>
-        <div class="product-card__info">
-          <span class="product-card__title">Кот полосатый</span>
-
-          <div class="product-card__traits">
-          <span class="product-card__trait product-card__trait--color">
-            Коричневый
-            <br>
-            oкрас
-          </span>
-
-            <span class="product-card__trait product-card__trait--age">
-            <b>5 мес.</b>
-            <br>
-            Возраст
-          </span>
-
-            <span class="product-card__trait product-card__trait--paw">
-            <b>4</b>
-            <br>Кол-во лап
-          </span>
-          </div>
-          <span class="product-card__trait product-card__trait--price">
-          30000 руб.
-          </span>
-        </div>
-        <div class=""></div>
-        <div class="product-card__button">
-          <span>Купить</span>
-        </div>
-      </div>
-
-      <div class="product-card" data-price="10000" data-age="1">
-        <div class="product-card__photo">
-          <img src="src/cat2.png"/>
-          <div class="product-card__sale">
-            <span></span>
-          </div>
-          <div class="product-card__like"><img src="src/like.png"/></div>
-        </div>
-        <div class="product-card__info">
-          <span class="product-card__title">Кот полосатый</span>
-
-          <div class="product-card__traits">
-          <span class="product-card__trait product-card__trait--color">
-            Коричневый
-            <br>
-            oкрас
-          </span>
-
-            <span class="product-card__trait product-card__trait--age">
-            <b>1 мес.</b>
-            <br>
-            Возраст
-          </span>
-
-            <span class="iproduct-card__trait product-card__trait--paw">
-            <b>4</b>
-            <br>Кол-во лап
-          </span>
-          </div>
-          <span class="product-card__trait product-card__trait--price">
-          10000 руб.
-          </span>
-        </div>
-        <div class=""></div>
-        <div class="product-card__button">
-          <span>Купить</span>
-        </div>
+      <div class="sort-panel__reset-all" id="sortReset">
+        Reset All
       </div>
     </section>
 
-      <div class="more-product-cards">Показать еще 20 товаров</div>
+    <section class="catalog-panel" id="catContainer">
+    </section>
+
+    <div class="more-product-cards" id="moreCards">Show more cats</div>
 
     <section class="subscription-form">
       <div class="subscription-form__title">
-        <h1>Успей купить!</h1>
-        <p>Подпишись и успей
+        <h1>Love Cats? Save Too!</h1>
+        <p>
+          Sign up today
           <br>
-          словить все акции</p>
+          for exclusive offers!
+        </p>
       </div>
+
       <div class="subscription-form__form">
         <form id="form">
-          <input class="subscription-form__email" type="email" placeholder="Email" id="email">
-          <input class="subscription-form__button" type="submit" value="Подписаться" id="submit">
+          <label for="email"></label>
+          <input class="subscription-form__email" type="email" placeholder="Your email" id="email">
+          <input class="subscription-form__button" type="button" value="Subscribe now" id="submit">
+
           <div class="subscription-form__subscribe">
             <input type="checkbox" id="news">
-            <label for="news">Подписаться на новости</label>
+            <label for="news">Subscribe to newsletter</label>
           </div>
         </form>
       </div>
     </section>
+  </div>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu__close" id="mobileMenuClose">
+      <svg class="cross-icon" viewBox="0 0 512 512" height="48px" width="48px" fill="#ffffff" xmlns="http://www.w3.org/2000/svg" id="Layer_1">
+        <polygon points="512,59.076 452.922,0 256,196.922 59.076,0 0,59.076 196.922,256 0,452.922 59.076,512 256,315.076 452.922,512 512,452.922 315.076,256"></polygon>
+      </svg>
     </div>
-  </main>
-  <script src="main.js" defer></script>
+
+    <ul class="mobile-menu__list">
+      <li><a href="#">Main</a></li>
+      <li><a href="#">Gallery</a></li>
+      <li><a href="#">News</a></li>
+      <li><a href="#">Profile</a></li>
+    </ul>
+  </div>
+</main>
+
+<script src="main.js"></script>
 </body>
 </html>
