@@ -24,7 +24,7 @@ header {
     position: relative;
     padding: 40px 0 66px 0;
     color: #fff;
-    background-image: url("src/header_bg.png");
+    background-image: url("src/assets/images/header_bg.png");
     background-size: cover;
     background-position: 50%;
     background-repeat: no-repeat;
@@ -217,7 +217,7 @@ ul a {
 }
 
 .product-card__like {
-    background: url("src/like.png");
+    background: url("src/assets/images/like.png");
     position: absolute;
     top: 36px;
     right: 32px;
